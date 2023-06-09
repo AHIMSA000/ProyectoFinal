@@ -1,0 +1,164 @@
+@import "global";
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    border-top: 30px solid rgb(52, 53, 51);
+    width: 100%;
+}
+
+.wrapper{
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+//Index
+
+nav{
+    @include caja-flex (space-between, center, nowrap);
+    padding-top: 3px;
+    background-color: #fff;
+
+    ul{
+        display: flex;
+        padding: 0;
+        margin: 3px;
+
+        a{
+            padding: 3px;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        a:hover{
+            color: purple;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.presentacion{
+    padding-top: 200px;
+    padding-bottom: 50px;
+    @include caja-flex(space-between, center, nowrap);
+
+    .flex-item2{
+        text-align: center;
+    }
+
+    h1{
+        margin-top: 0;
+        padding-right: 20px;
+        font-size: $font-h1;
+    }
+
+    p{
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.servicios{
+    div{
+        text-align: center;
+    }
+
+    .tipo-servicios{
+        @include caja-flex(center, center, nowrap);
+    }
+}
+
+footer{
+    min-height: 80px;
+    background-color: black;
+    margin-top: 0;
+    .footer-content{
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+//Contacto
+
+.formulario{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+
+    form{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+    }
+}
+
+.formulario-content{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    label{
+        font-size: 1.3rem;
+    }
+}
+
+//Blog
+
+.presentacion3{
+    width: 700px;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    
+    .presentacio-items{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+//Sobre nosotros
+
+.presentacion2{ 
+    padding-top: 10%;
+    padding-bottom: 50px;
+    text-align: center;
+    .item1{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+        margin: auto;
+    }
+
+    .item2{
+        padding: 50px 55px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+        margin: auto;
+        margin-top: 2em;
+    }
+}
+
+#carouselExample{
+   width: 700px;
+   margin: auto;
+   margin-bottom: 10px;
+}
+@import "medios";
